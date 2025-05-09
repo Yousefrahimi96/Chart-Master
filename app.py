@@ -5,12 +5,26 @@ st.image('./image/pic.webp')
 
 login_option = st.sidebar.radio(
     "login/signup",
-    ("login", "signup")
+    ("login", "sign up")
 )
 
 if login_option == "login":
-    pass
-    
+    with st.sidebar.form('login'):
+        st.write('login here')
+        username = st.text_input('Username')
+        password = st.text_input('Password', type='password')
+        submitted = st.form_submit_button('login')
+        if submitted :
+            pass
+else:
+    with st.sidebar.form('Sign up'):
+        st.write('sign up here')
+        username = st.text_input('Username')
+        email = st.text_input('Email')
+        password = st.text_input('Password', type='password')
+        submitted = st.form_submit_button('Sign up')
+        if submitted :
+            pass
 
 choise = st.radio('please select an item', ['computer', 'camera'])
 if choise == 'camera':
