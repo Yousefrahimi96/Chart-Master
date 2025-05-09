@@ -1,9 +1,18 @@
 import streamlit as st
 from PIL import Image
 
-st.title('Convert photo to black and white')
+st.image('./image/pic.webp')
 
-choise = st.radio('please select an item', ['camera', 'computer'])
+login_option = st.sidebar.radio(
+    "login/signup",
+    ("login", "signup")
+)
+
+if login_option == "login":
+    pass
+    
+
+choise = st.radio('please select an item', ['computer', 'camera'])
 if choise == 'camera':
     picture = st.camera_input("Take a picture")
 else :
