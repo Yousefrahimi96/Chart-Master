@@ -15,7 +15,7 @@ A simple web application built with Streamlit that allows users to upload photos
 
 1. Clone this repository:
 ```
-git clone https://github.com/yourusername/Photo-Converter.git
+git clone https://github.com/yousefrahimi96/Photo-Converter.git
 cd Photo-Converter
 ```
 
